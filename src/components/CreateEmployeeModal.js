@@ -123,9 +123,11 @@ const CreateEmployeeModal = ({ show, handleClose, onEmployeeCreated }) => {
             <Form.Control.Feedback type="invalid">Please provide a position.</Form.Control.Feedback>
           </Form.Group>
 
-          <Button variant="primary" type="submit" className="mt-3">
+          <div className="d-flex justify-content-end mt-3">
+          <Button variant="primary" type="submit">
             Create Employee
           </Button>
+        </div>
         </Form>
       </Modal.Body>
     </Modal>
