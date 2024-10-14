@@ -31,3 +31,11 @@ export const deleteEmployee = (employeeId) => {
 export const assignSupervisor = (employeeId, supervisorId) => {
   return axios.put(`${BASE_URL}/${employeeId}/assign-supervisor`, { supervisorId });
 };
+
+export const searchEmployeesByEmail = (email) => {
+  return axios.get(`${BASE_URL}/search`, {
+    params: {
+      email: email
+    }
+  });
+};

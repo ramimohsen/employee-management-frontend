@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Employee Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and efficient Employee Management System built with React, allowing users to manage employee information, assign supervisors, and perform various CRUD operations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Employee Management
+- **View Employee List**: Display a comprehensive list of employees with relevant details including first name, last name, email, and position.
+- **Search Functionality**: Easily search for employees by name or email to quickly find the information you need.
 
-### `npm start`
+### 2. Add New Employees
+- **Add Employee Form**: A user-friendly form to input new employee details, including first name, last name, email, position, and supervisor information.
+- **Validation**: Ensure that all required fields are filled and valid before submitting the form.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Update Employee Information
+- **Edit Employee Details**: Click on an employee to bring up a modal that allows you to edit their information.
+- **Real-time Validation**: Validate the input fields in real-time to ensure correct data entry.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. Delete Employees
+- **Confirmation Modal**: Before deletion, a confirmation modal prompts the user to confirm the action to prevent accidental deletions.
+- **Error Handling**: Alerts to inform users of successful or failed deletion actions.
 
-### `npm test`
+### 5. Assign Supervisors
+- **Assign Supervisor Modal**: A dedicated modal to assign a supervisor to an employee.
+- **Dynamic Supervisor Search**: As you type in the email of a supervisor, the application automatically fetches relevant supervisors without needing a search button.
+- **Success/Error Alerts**: Alerts to notify users of the outcome of the assignment action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 6. Responsive Design
+- **Mobile-Friendly**: The application is designed to be fully responsive, providing a smooth experience on both desktop and mobile devices.
 
-### `npm run build`
+### 7. User Feedback
+- **Alerts for Actions**: Users receive visual feedback for various actions like adding, updating, deleting, or assigning supervisors through alert messages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
+- **React**: JavaScript library for building user interfaces.
+- **React-Bootstrap**: UI toolkit for Bootstrap components in React.
+- **Axios**: Promise-based HTTP client for making API requests.
+- **React Router**: For navigation and routing in the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these steps.
 
-### `npm run eject`
+### Prerequisites
+- Node.js
+- npm (Node package manager)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Installation
+1. Clone the repo
+   ```bash
+   git clone https://github.com/ramimohsen/employee-management-frontend.git
+   cd employee-management-frontend
+   npm install
+   npm start
+   ```
